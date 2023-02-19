@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// template3 演示嵌套模板
 func template3(w http.ResponseWriter, r *http.Request) {
 	// 定义模板
 	// 解析模板
