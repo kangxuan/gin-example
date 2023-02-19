@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+</head>
+<body>
+<h1>u1</h1>
+<p>Name: {{ .u1.Name }}</p>
+<p>Gender: {{ .u1.Gender }}</p>
+<p>Age: {{ .u1.Age }}</p>
+<h1>m1</h1>
+<p>name: {{ .m1.name }}</p>
+<p>age: {{ .m1.age }}</p>
+<p>gender: {{ .m1.gender }}</p>
+
+{{/* 这是一段注释 */}}
+
+{{/* 变量定义 */}}
+{{ $v := 100 }}
+{{ $age := .m1.age }}
+
+<hr>
+{{if lt $age 22}}
+好好学习
+{{else}}
+好好工作
+{{end}}
+
+<hr>
+{{range $kv, $hobby := .hobbyList}}
+<p>{{ $kv }} - {{ $hobby }}</p>
+{{else}}
+没啥爱好
+{{end}}
+
+<hr>
+<h1>m1</h1>
+{{with .m1 }}
+<p>name: {{ .name }}</p>
+<p>age: {{ .age }}</p>
+<p>gender: {{ .gender }}</p>
+{{end}}
+</body>
+</html>
