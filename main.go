@@ -2,6 +2,7 @@ package main
 
 import "github.com/gin-gonic/gin"
 
+// gin第一个例子
 func main() {
 	//创建一个默认的路由引擎
 	r := gin.Default()

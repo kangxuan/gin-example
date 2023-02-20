@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// 演示Restful风格
 func main() {
 	r := gin.Default()
 	// restful风格

@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// 演示gin对模板下多个目录的渲染
 func main() {
 	r := gin.Default()
 

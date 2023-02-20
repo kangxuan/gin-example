@@ -5,6 +5,7 @@ import (
 	"net/http"
 )
 
+// 演示gin如何进行模板渲染
 func main() {
 	// 实例化gin框架
 	r := gin.Default()

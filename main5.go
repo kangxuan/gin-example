@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// 演示自定义模板函数
 func main() {
 	r := gin.Default()
 	// 定义模板函数，可以在模板中使用
