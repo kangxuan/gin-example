@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+// 演示接收Query string参数
 func main() {
 	r := gin.Default()
 
