@@ -52,6 +52,16 @@ func main() {
 				"message": "get a user",
 			})
 		})
+
+		// 嵌套路由组
+		xx := v1.Group("/xx")
+		{
+			xx.GET("/info", func(c *gin.Context) {
+				c.JSON(http.StatusOK, gin.H{
+					"message": "xx info",
+				})
+			})
+		}
 	}
 
 	// 未定义路由的走这里的逻辑
