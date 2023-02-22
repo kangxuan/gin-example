@@ -14,5 +14,5 @@ func main() {
 	})
 
 	// 启动http服务
-	r.Run()
+	_ = r.Run()
 }
