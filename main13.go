@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+// 演示如何上传文件
 func main() {
 	r := gin.Default()
 
